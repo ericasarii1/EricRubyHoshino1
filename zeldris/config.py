@@ -16,7 +16,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
-if not __name__.endswith("sample_config"):
+if not __name__.endswith("config"):
     import sys
 
     print(
@@ -34,33 +34,33 @@ class Config(object):
     # REQUIRED
     TOKEN = ""  # Take from @BotFather
     OWNER_ID = (
-        ""  # If you dont know, run the bot and do /id in your private chat with it
+        "7742582171"  # If you dont know, run the bot and do /id in your private chat with it
     )
-    OWNER_USERNAME = ""
-    API_HASH = None  # for purge stuffs
-    API_ID = None
+    OWNER_USERNAME = "bila_asarii"
+    API_HASH = ""  # for purge stuffs
+    API_ID = 29545467
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "sqldbtype://username:pw@hostname:port/db_name"  # needed for any database modules
-    MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
-    REDIS_URL = "redis://something@nothing/anything:10002"  # needed for afk module, get from redislab
-    LOAD = []
-    NO_LOAD = []
+    SQLALCHEMY_DATABASE_URI = ""  # needed for any database modules
+    MESSAGE_DUMP = "-1002230982823"  # needed to make sure 'save from' messages persist
+    REDIS_URL = ""  # needed for afk module, get from redislab
+    LOAD = ""
+    NO_LOAD = "android"
     WEBHOOK = False
     URL = None
     MONGO_URI = ""
     MONGO_PORT = 27017  # leave it as it is
-    MONGO_DB = "Zeldris"
+    MONGO_DB = "rubyhoshino"
 
     # OPTIONAL
     DEV_USERS = (
-        []
+        [7842121452, 7967369452, 7133102095, 1454556602, 2005540797, 7858402613, 7436081160, 6565297804, 7213596810, 7608534850, 7013362810, 8193231031, 7010422153, 5987888780, 8020068489, 8148781195, 7722797664, 7763617262, 7742582171]
     )  # List of id's (not usernames) for users which have sudo access to the bot.
     SUPPORT_USERS = (
-        []
+        [7842121452, 7967369452, 7133102095, 1454556602, 2005540797, 7858402613, 7436081160, 6565297804, 7213596810, 7608534850, 7013362810, 8193231031, 7010422153, 5987888780, 8020068489, 8148781195, 7722797664, 7763617262, 7742582171]
     )  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     WHITELIST_USERS = (
-        []
+        [7842121452, 7967369452, 7133102095, 1454556602, 2005540797, 7858402613, 7436081160, 6565297804, 7213596810, 7608534850, 7013362810, 8193231031, 7010422153, 5987888780, 8020068489, 8148781195, 7722797664, 7763617262, 7742582171]
     )  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     WHITELIST_CHATS = []
     BLACKLIST_CHATS = []
@@ -73,9 +73,9 @@ class Config(object):
     BAN_STICKER = None  # banhammer marie sticker
     ALLOW_EXCL = False  # DEPRECATED, USE BELOW INSTEAD! Allow ! commands as well as /
     CUSTOM_CMD = False  # Set to ('/', '!') or whatever to enable it, like ALLOW_EXCL but with more custom handler!
-    API_OPENWEATHER = None  # OpenWeather API
-    SPAMWATCH_API = None  # Your SpamWatch token
-    WALL_API = None
+    API_OPENWEATHER = ""  # OpenWeather API
+    SPAMWATCH_API = ""  # Your SpamWatch token
+    WALL_API = ""
     SPAMMERS = None
 
 
