@@ -171,8 +171,8 @@ def __gdpr__(user_id):
 __help__ = """
 When marked as AFK, any mentions will be replied to with a message to say you're not available!
 
-× /afk `<reason>`: Mark yourself as AFK.
-× `brb <reason>`: Same as the afk - but not a prefix.
+⋊ /afk `<reason>`: Mark yourself as AFK.
+⋊ `brb <reason>`: Same as the afk - but not a prefix.
 
 An example of how to afk or brb:
 `/afk dinner` or brb dinner.
