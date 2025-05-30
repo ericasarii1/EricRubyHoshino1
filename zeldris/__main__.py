@@ -99,8 +99,8 @@ PM_START_TEXT = """
 Hey there! my name is *{}*. 
 A modular group management bot with useful features. [ㅤ](https://ar-hosting.pages.dev/1748623080980.jpg)
 
-◑ *Uptime:* `{}`
-◑ `{}` *Users, across* `{}` *chats.*
+⨳ *Uptime:* `{}`
+⨳ `{}` *Users, across* `{}` *chats.*
 
 Any issues or need help related to me?
 Join our official group [Ovanime Indonesia](https://t.me/Grup_Ovanime_Indo).
