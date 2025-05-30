@@ -217,14 +217,14 @@ def bluetext_ignore_list(update: Update, _: CallbackContext):
 
 __help__ = """
 Blue text cleaner removed any made up commands that people send in your chat.
-× /cleanblue <on/off/yes/no>: Clean commands after sending.
-× /ignoreblue <word>: Prevent auto cleaning of the command.
-× /unignoreblue <word>: Remove prevent auto cleaning of the command.
-× /listblue: List currently whitelisted commands.
+⋊ /cleanblue <on/off/yes/no>: Clean commands after sending.
+⋊ /ignoreblue <word>: Prevent auto cleaning of the command.
+⋊ /unignoreblue <word>: Remove prevent auto cleaning of the command.
+⋊ /listblue: List currently whitelisted commands.
 
 *Following are Sudo Users only commands, admins cannot use these:*
-× /gignoreblue <word>: Globally ignore bluetext cleaning of saved word across Zeldris.
-× /ungignoreblue <word>: Remove said command from global cleaning list.
+⋊ /gignoreblue <word>: Globally ignore bluetext cleaning of saved word across Zeldris.
+⋊ /ungignoreblue <word>: Remove said command from global cleaning list.
 """
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler(
