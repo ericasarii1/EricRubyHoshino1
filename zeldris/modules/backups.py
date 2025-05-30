@@ -122,7 +122,7 @@ def import_data(
         except Exception:
             msg.reply_text(
                 "An error occurred while recovering your data. The process failed. If you experience a problem with "
-                "this, please ask on @IDNCoderX. "
+                "this, please ask on @Grup_Ovanime_Indo. "
             )
 
             LOGGER.exception(
@@ -374,7 +374,7 @@ def export_data(
     context.bot.sendDocument(
         current_chat_id,
         document=open("Zeldris{}.backup".format(chat_id), "rb"),
-        caption="*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Zeldris-Backup` "
+        caption="*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Ruby Hoshino-Backup` "
         "was specially made for notes.".format(
             chat.title,
             chat_id,
@@ -407,10 +407,10 @@ __mod_name__ = "Backups"
 __help__ = """
 *Only for chat administrator:*
 
-× /import: Reply to the backup file to import as much as possible, making transfers 
+⋊ /import: Reply to the backup file to import as much as possible, making transfers 
 very easy! Note that files / photos cannot be imported due to telegram restrictions. 
 
-× /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, 
+⋊ /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, 
 voice, text, text buttons)
 """
 
