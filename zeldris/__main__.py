@@ -93,17 +93,17 @@ def get_readable_time(seconds: int) -> str:
 
 
 # sourcery skip: raise-specific-error
-ZELDRIS_IMG = "https://telegra.ph/file/1fa00785f30375c0c1b50.jpg"
+ZELDRIS_IMG = "https://ar-hosting.pages.dev/1748623080980.jpg"
 
 PM_START_TEXT = """
 Hey there! my name is *{}*. 
-A modular group management bot with useful features. [ㅤ](https://telegra.ph/file/fed9ba09e9add9b197c21.png)
+A modular group management bot with useful features. [ㅤ](https://ar-hosting.pages.dev/1748623080980.jpg)
 
 ◑ *Uptime:* `{}`
 ◑ `{}` *Users, across* `{}` *chats.*
 
 Any issues or need help related to me?
-Join our official group [IDNCoderX](https://t.me/IDNCoderX).
+Join our official group [Ovanime Indonesia](https://t.me/Grup_Ovanime_Indo).
 Click help button to know my commands!
 """
 
@@ -115,12 +115,12 @@ buttons = [
         ),
         InlineKeyboardButton(
             text="Updates 📢",
-            url="https://t.me/IDNCoder",
+            url="https://t.me/TE_Team_Official",
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Add Zeldris to Your Group 👥",
+            text="Add Ruby Hoshino 👥",
             url="t.me/ZeldrisRobot?startgroup=true",
         ),
     ],
@@ -131,10 +131,10 @@ Hello there! My name is *{dispatcher.bot.first_name}*.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
-× /start: Starts me, can be used to check i'm alive or no...
-× /help: PM's you this message.
-× /help <module name>: PM's you info about that module.
-× /settings: in PM: will send you your settings for all supported modules.
+⋊ /start: Starts me, can be used to check i'm alive or no...
+⋊ /help: PM's you this message.
+⋊ /help <module name>: PM's you info about that module.
+⋊ /settings: in PM: will send you your settings for all supported modules.
 - in a group: will redirect you to pm, with all that chat's settings.
 \nClick on the buttons below to get documentation about specific modules!"""
 
@@ -258,7 +258,7 @@ def start(update: Update, context: CallbackContext):
     else:
         message.reply_photo(
             ZELDRIS_IMG,
-            caption="<b>Yes, I'm alive!\nHaven't sleep since</b>: <code>{}</code>".format(
+            caption="<b>Yes, I'm Ruby Hoshino alive!\nHaven't sleep since</b>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -266,12 +266,12 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="☎️ Support",
-                            url="https://t.me/IDNCoderX",
+                            text="Owner",
+                            url="https://t.me/bila_asarii",
                         ),
                         InlineKeyboardButton(
-                            text="Updates 📡",
-                            url="https://t.me/IDNCoder",
+                            text="TE Team",
+                            url="https://t.me/TE_Team_Official",
                         ),
                     ]
                 ]
@@ -689,7 +689,7 @@ def main():
         LOGGER.info("[Zeldris] Using long polling.")
         updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True)
         if MESSAGE_DUMP:
-            updater.bot.send_message(chat_id=MESSAGE_DUMP, text="I'm a Demon King...")
+            updater.bot.send_message(chat_id=MESSAGE_DUMP, text="I'm Ruby Hoshino active again")
     if len(argv) in {1, 3, 4}:
         client.run_until_disconnected()
     else:
