@@ -129,7 +129,7 @@ def new_fed(update: Update, context: CallbackContext):
         x = sql.new_fed(user.id, fed_name, fed_id)
         if not x:
             update.effective_message.reply_text(
-                "Can't federate! Please contact @IDNCoderX if the problem persists."
+                "Can't federate! Please contact @Grup_Ovanime_Indo if the problem persists."
             )
             return
 
@@ -1364,10 +1364,10 @@ def fed_ban_list(
                 backups += json.dumps(json_parser)
                 backups += "\n"
             with BytesIO(str.encode(backups)) as output:
-                output.name = "zeldris_fbanned_users.json"
+                output.name = "RubyHoshino_fbanned_users.json"
                 update.effective_message.reply_document(
                     document=output,
-                    filename="zeldris_fbanned_users.json",
+                    filename="RubyHoshino_fbanned_users.json",
                     caption="Total {} User are blocked by the Federation {}.".format(
                         len(getfban), info["fname"]
                     ),
@@ -1404,10 +1404,10 @@ def fed_ban_list(
                 )
                 backups += "\n"
             with BytesIO(str.encode(backups)) as output:
-                output.name = "zeldris_fbanned_users.csv"
+                output.name = "RubyHoshino_fbanned_users.csv"
                 update.effective_message.reply_document(
                     document=output,
-                    filename="zeldris_fbanned_users.csv",
+                    filename="RubyHoshino_fbanned_users.csv",
                     caption="Total {} User are blocked by Federation {}.".format(
                         len(getfban), info["fname"]
                     ),
@@ -2261,23 +2261,23 @@ You can even designate admin federations, so your trusted admin can ban all the 
 
 *Commands Available*:
 
-× /newfed <fedname>: Create a new Federation with the name given. Users are only allowed to have one Federation. This method can also be used to rename the Federation. (max. 64 characters)
-× /delfed: Delete your Federation, and any information related to it. Will not cancel blocked users.
-× /fedinfo <FedID>: Information about the specified Federation.
-× /joinfed <FedID>: Join the current chat to the Federation. Only chat owners can do this. Every chat can only be in one Federation.
-× /leavefed <FedID>: Leave the Federation given. Only chat owners can do this.
-× /fpromote <user>: Promote Users to give fed admin. Fed owner only.
-× /fdemote <user>: Drops the User from the admin Federation to a normal User. Fed owner only.
-× /fban <user>: Prohibits users from all federations where this chat takes place, and executors have control over.
-× /unfban <user>: Cancel User from all federations where this chat takes place, and that the executor has control over.
-× /setfrules: Arrange Federation rules.
-× /frules: See Federation regulations.
-× /chatfed: See the Federation in the current chat.
-× /fedadmins: Show Federation admin.
-× /fbanlist: Displays all users who are victimized at the Federation at this time.
-× /fednotif <on / off>: Federation settings not in PM when there are users who are fban / unfban.
-× /fedchats: Get all the chats that are connected in the Federation.
-× /importfbans: Reply to the Federation backup message file to import the banned list to the Federation now.
+⋊ /newfed <fedname>: Create a new Federation with the name given. Users are only allowed to have one Federation. This method can also be used to rename the Federation. (max. 64 characters)
+⋊ /delfed: Delete your Federation, and any information related to it. Will not cancel blocked users.
+⋊ /fedinfo <FedID>: Information about the specified Federation.
+⋊ /joinfed <FedID>: Join the current chat to the Federation. Only chat owners can do this. Every chat can only be in one Federation.
+⋊ /leavefed <FedID>: Leave the Federation given. Only chat owners can do this.
+⋊ /fpromote <user>: Promote Users to give fed admin. Fed owner only.
+⋊ /fdemote <user>: Drops the User from the admin Federation to a normal User. Fed owner only.
+⋊ /fban <user>: Prohibits users from all federations where this chat takes place, and executors have control over.
+⋊ /unfban <user>: Cancel User from all federations where this chat takes place, and that the executor has control over.
+⋊ /setfrules: Arrange Federation rules.
+⋊ /frules: See Federation regulations.
+⋊ /chatfed: See the Federation in the current chat.
+⋊ /fedadmins: Show Federation admin.
+⋊ /fbanlist: Displays all users who are victimized at the Federation at this time.
+⋊ /fednotif <on / off>: Federation settings not in PM when there are users who are fban / unfban.
+⋊ /fedchats: Get all the chats that are connected in the Federation.
+⋊ /importfbans: Reply to the Federation backup message file to import the banned list to the Federation now.
 """
 
 NEW_FED_HANDLER = CommandHandler("newfed", new_fed, run_async=True)
