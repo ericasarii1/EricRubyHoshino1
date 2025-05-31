@@ -327,7 +327,7 @@ def check_and_ban(update, user_id, should_message=True):
             update.effective_chat.ban_member(user_id)
             if should_message:
                 update.effective_message.reply_text(
-                    f"This person has been detected as spambot by @SpamWatch and has been removed!"
+                    f"This person has been detected as spambot by @SpamWatchBot and has been removed!"
                     f"\nReason: <code>{spmban.reason}</code>",
                     parse_mode=ParseMode.HTML,
                 )
@@ -420,7 +420,7 @@ def __user_info__(user_id):
         user = db.get_gbanned_user(user_id)
         if user["reason"]:
             text += f"\nReason: {html.escape(user['reason'])}"
-            text += "\n\nAppeal at @IDNCoderX if you think it's invalid."
+            text += "\n\nAppeal at @eagleunionenterprise if you think it's invalid."
     else:
         text = text.format("No")
     return text
@@ -438,13 +438,13 @@ __help__ = """
 *Admin only:*
 × /spamshield <on/off/yes/no>: Will disable or enable the effect of Spam protection in your group.
 
-Spam shield uses @Spamwatch API and Global bans to remove Spammers as much as possible from your chatroom!
+Spam shield uses @SpamWatchBot API and Global bans to remove Spammers as much as possible from your chatroom!
 
 *What is SpamWatch?*
 
 SpamWatch maintains a large constantly updated ban-list of spambots, trolls, bitcoin spammers and unsavoury 
-characters. Zeldris will constantly help banning spammers off from your group automatically So, you don't have to 
-worry about spammers storming your group[.](https://telegra.ph/file/c1051d264a5b4146bd71e.jpg) 
+characters. Ruby Hoshino will constantly help banning spammers off from your group automatically So, you don't have to 
+worry about spammers storming your group[.](https://ar-hosting.pages.dev/1748660810970.jpg) 
 """
 
 __mod_name__ = "Spam Shield"
