@@ -67,15 +67,15 @@ class Config(object):
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
     PORT = 5000
-    DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
+    DEL_CMDS = True  # Whether or not you should delete "blue text must click" commands
     STRICT_GBAN = True
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
     BAN_STICKER = None  # banhammer marie sticker
-    ALLOW_EXCL = False  # DEPRECATED, USE BELOW INSTEAD! Allow ! commands as well as /
-    CUSTOM_CMD = False  # Set to ('/', '!') or whatever to enable it, like ALLOW_EXCL but with more custom handler!
-    API_OPENWEATHER = ""  # OpenWeather API
-    SPAMWATCH_API = ""  # Your SpamWatch token
-    WALL_API = ""
+    ALLOW_EXCL = True  # DEPRECATED, USE BELOW INSTEAD! Allow ! commands as well as /
+    CUSTOM_CMD = ('/', '!')  # Set to ('/', '!') or whatever to enable it, like ALLOW_EXCL but with more custom handler!
+    API_OPENWEATHER = "f982bee89b384e1bb8a44757250504"  # OpenWeather API
+    SPAMWATCH_API = "S7X8GtEhnDLJPdN2kBih0oyqPjyV~zxlWx8fil4_f_BIP5tPP6fw5P2jFtkUtOTx"  # Your SpamWatch token
+    WALL_API = "cpSt7KhB31vsx5jrVcS8yOuys8bPTd7g"
     SPAMMERS = None
 
 
