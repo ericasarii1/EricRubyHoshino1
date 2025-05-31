@@ -101,19 +101,19 @@ def gtts(update: Update, context: CallbackContext):
             reply = reply.replace(x, "")
     try:
         tts = gTTS(reply)
-        tts.save("zeldris.mp3")
-        with open("zeldris.mp3", "rb") as speech:
+        tts.save("RubyHoshino.mp3")
+        with open("RubyHoshino.mp3", "rb") as speech:
             msg.reply_audio(speech)
     finally:
-        if os.path.isfile("zeldris.mp3"):
-            os.remove("zeldris.mp3")
+        if os.path.isfile("RubyHoshino.mp3"):
+            os.remove("RubyHoshino.mp3")
 
 
 __help__ = """
-× /tr or /tl: To translate to your language, by default language is set to english,\
+⋊ /tr or /tl: To translate to your language, by default language is set to english,\
 use `/tr <lang code>` for some other language!
-× /langs: List of all language code to translates!
-× /tts: To some message to convert it into audio format! 
+⋊ /langs: List of all language code to translates!
+⋊ /tts: To some message to convert it into audio format! 
 """
 
 __mod_name__ = "Translate"
