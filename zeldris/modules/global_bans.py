@@ -436,7 +436,7 @@ def __chat_settings__(chat_id, _):
 
 __help__ = """
 *Admin only:*
-× /spamshield <on/off/yes/no>: Will disable or enable the effect of Spam protection in your group.
+⋊ /spamshield <on/off/yes/no>: Will disable or enable the effect of Spam protection in your group.
 
 Spam shield uses @SpamWatchBot API and Global bans to remove Spammers as much as possible from your chatroom!
 
