@@ -438,28 +438,28 @@ def goodmorning(update: Update, _: CallbackContext):
 __help__ = """
 Some dank memes for fun or whatever!
 
-× /shrug | /cri: Get shrug or ToT.
-× /decide: Randomly answer yes no etc.
-× /abuse: Abuses the retard!
-× /table: Flips a table...
-× /runs: Reply a random string from an array of replies.
-× /slap: Slap a user, or get slapped if not a reply.
-× /pasta: Famous copypasta meme, try and see.
-× /clap: Claps on someones message!
-× /owo: UwU-fy whole text XD.
-× /roll: Rolls a dice.
-× /recite: Logical quotes to change your life.
-× /stretch:  streeeeeeetch iiiiiiit.
-× /warm: Hug a user warmly, or get hugged if not a reply.
-× /punch: Punch a user, or get punched if not a reply.
-× /police: Give Police siren Animation.
+⋊ /shrug | /cri: Get shrug or ToT.
+⋊ /decide: Randomly answer yes no etc.
+⋊ /abuse: Abuses the retard!
+⋊ /table: Flips a table...
+⋊ /runs: Reply a random string from an array of replies.
+⋊ /slap: Slap a user, or get slapped if not a reply.
+⋊ /pasta: Famous copypasta meme, try and see.
+⋊ /clap: Claps on someones message!
+⋊ /owo: UwU-fy whole text XD.
+⋊ /roll: Rolls a dice.
+⋊ /recite: Logical quotes to change your life.
+⋊ /stretch:  streeeeeeetch iiiiiiit.
+⋊ /warm: Hug a user warmly, or get hugged if not a reply.
+⋊ /punch: Punch a user, or get punched if not a reply.
+⋊ /police: Give Police siren Animation.
 
 *Regex based memes:*
-`/decide` (disabled rn) can be also used with regex like: `zeldris What? <question>: randomly answer "Yes, No" etc.`
+`/decide` (disabled rn) can be also used with regex like: `Ruby Hoshino What? <question>: randomly answer "Yes, No" etc.`
 Some other regex filters are:
 `me too` | `good morning` | `good night`.
 
-Zeldris will reply random strings accordingly when these words are used!
+Ruby Hoshino will reply random strings accordingly when these words are used!
 All regex filters can be disabled incase u don't want... like: `/disable metoo`.
 """
 
