@@ -223,7 +223,7 @@ Blue text cleaner removed any made up commands that people send in your chat.
 ⋊ /listblue: List currently whitelisted commands.
 
 *Following are Sudo Users only commands, admins cannot use these:*
-⋊ /gignoreblue <word>: Globally ignore bluetext cleaning of saved word across Zeldris.
+⋊ /gignoreblue <word>: Globally ignore bluetext cleaning of saved word across Ruby Hoshino.
 ⋊ /ungignoreblue <word>: Remove said command from global cleaning list.
 """
 
